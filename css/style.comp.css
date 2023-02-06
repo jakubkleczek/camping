@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  margin: 20rem;
+  padding: 20rem;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  color: aqua;
+  background-color: orangered; }
