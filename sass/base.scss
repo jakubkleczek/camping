@@ -15,4 +15,36 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    background-color: orangered;
+}
+
+.header {
+    // margin: 4rem 10rem;
+    background-image: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2)), url(../img/ben-duchac-3fJOXw1RbPo-unsplash.png);
+    height: 85vh;
+    background-size: cover;
+    background-position: top;
+    border-radius: 0 0 10rem 10rem;
+    color: #FFF;
+
+    // &__backimg {
+    //     width: 100%;
+    //     z-index: -1;
+    // }
+
+    &__nav {
+        
+
+        &--icon {
+            border-radius: 50%;
+        }
+    }
+
+    &__title {
+
+    }
+
+    &__tiles {
+        
+    }
 }

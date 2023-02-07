@@ -11,4 +11,15 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  background-color: orangered; }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/ben-duchac-3fJOXw1RbPo-unsplash.png);
+  height: 85vh;
+  background-size: cover;
+  background-position: top;
+  border-radius: 0 0 10rem 10rem;
+  color: #FFF; }
+  .header__nav--icon {
+    border-radius: 50%; }
