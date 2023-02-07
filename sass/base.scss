@@ -27,6 +27,13 @@ body {
     border-radius: 0 0 10rem 10rem;
     color: #FFF;
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    
+
     // &__backimg {
     //     width: 100%;
     //     z-index: -1;
@@ -41,10 +48,22 @@ body {
     }
 
     &__title {
+        
 
+        &--h1 {
+            font-size: 6rem;
+        }
+
+        &--h3 {
+
+        }
+
+        &--btn {
+
+        }
     }
 
     &__tiles {
-        
+
     }
 }

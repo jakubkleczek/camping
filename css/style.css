@@ -20,6 +20,13 @@ body {
   background-size: cover;
   background-position: top;
   border-radius: 0 0 10rem 10rem;
-  color: #FFF; }
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column; }
   .header__nav--icon {
     border-radius: 50%; }
+  .header__title--h1 {
+    font-size: 6rem; }
