@@ -20,32 +20,64 @@
     // }
 
     &__nav {
-        width: 90%;
-        margin: 5rem 0 5rem 5rem;
-        font-size: 2rem;
-
-        display: grid;
-        grid-template-columns: repeat(9, max-content) repeat(2, max-content);
+        width: 80%;
+        margin: 5rem 0;
+        font-size: 1.5rem;
         
 
+        display: grid;
+        grid-template-columns: repeat(9, max-content) minmax(max-content, 1fr)  max-content;
+        align-items: center;
+        grid-column-gap: 3rem;
+
         &--icon {
-            border-radius: 20%;
+            height: 4rem;
+            width: 4rem;
 
         }
 
         &--text {
             
+            &:hover,
+            &:active {
+                &::after {
+                    height: 1px;
+                    width: 2rem;
+                    color: orangered;
+
+                    z-index: 2;
+                }
+            }
         }
 
-        &--btn {
+        &--text,
+        &--btn-up,
+        &--btn-in {
+            text-decoration: none;
+            color: #FFF;
+            
+        }
 
-            &--up {
-                justify-self: end;
-            }
+        &--btn-up,
+        &--btn-in {
+            transition: all .2s;
+            padding: 1rem 2.5rem;
+            
 
-            &--in {
-                
+            &:hover,
+            &:active {
+                border: 1px solid #fff;
+                border-radius: 10rem;
             }
+            
+        }
+
+        &--btn-up {
+            justify-self: end;
+        }
+
+        &--btn-in {
+
         }
     }
 
@@ -54,7 +86,6 @@
 
         &--h1 {
             font-size: 6rem;
-            align-self: center;
         }
 
         &--h3 {
@@ -62,7 +93,13 @@
         }
 
         &--btn {
-
+            font-size: 1.3rem;
+            transition: all .2s;
+            padding: 1.5rem 5rem;
+            background-color: rgb(229, 97, 49);
+            border-radius: 10rem;
+            text-decoration: none;
+            color: #FFF;
         }
     }
 

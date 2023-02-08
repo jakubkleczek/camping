@@ -12,7 +12,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  background-color: orangered; }
+  background-color: #e56131; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/ben-duchac-3fJOXw1RbPo-unsplash.png);
@@ -27,17 +27,41 @@ body {
   align-content: center;
   flex-direction: column; }
   .header__nav {
-    width: 90%;
-    margin: 5rem 0 5rem 5rem;
-    font-size: 2rem;
+    width: 80%;
+    margin: 5rem 0;
+    font-size: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(9, max-content) repeat(2, max-content); }
+    grid-template-columns: repeat(9, max-content) minmax(max-content, 1fr) max-content;
+    align-items: center;
+    grid-column-gap: 3rem; }
     .header__nav--icon {
-      border-radius: 20%; }
-    .header__nav--btn--up {
+      height: 4rem;
+      width: 4rem; }
+    .header__nav--text:hover::after, .header__nav--text:active::after {
+      height: 1px;
+      width: 2rem;
+      color: orangered;
+      z-index: 2; }
+    .header__nav--text, .header__nav--btn-up, .header__nav--btn-in {
+      text-decoration: none;
+      color: #FFF; }
+    .header__nav--btn-up, .header__nav--btn-in {
+      transition: all .2s;
+      padding: 1rem 2.5rem; }
+      .header__nav--btn-up:hover, .header__nav--btn-up:active, .header__nav--btn-in:hover, .header__nav--btn-in:active {
+        border: 1px solid #fff;
+        border-radius: 10rem; }
+    .header__nav--btn-up {
       justify-self: end; }
   .header__title {
     align-self: center; }
     .header__title--h1 {
-      font-size: 6rem;
-      align-self: center; }
+      font-size: 6rem; }
+    .header__title--btn {
+      font-size: 1.3rem;
+      transition: all .2s;
+      padding: 1.5rem 5rem;
+      background-color: #e56131;
+      border-radius: 10rem;
+      text-decoration: none;
+      color: #FFF; }
