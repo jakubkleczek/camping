@@ -1,0 +1,72 @@
+.header {
+    // margin: 4rem 10rem;
+    background-image: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2)), url(../img/ben-duchac-3fJOXw1RbPo-unsplash.png);
+    height: 85vh;
+    background-size: cover;
+    background-position: top;
+    border-radius: 0 0 10rem 10rem;
+    color: #FFF;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    
+
+    // &__backimg {
+    //     width: 100%;
+    //     z-index: -1;
+    // }
+
+    &__nav {
+        width: 90%;
+        margin: 5rem 0 5rem 5rem;
+        font-size: 2rem;
+
+        display: grid;
+        grid-template-columns: repeat(9, max-content) repeat(2, max-content);
+        
+
+        &--icon {
+            border-radius: 20%;
+
+        }
+
+        &--text {
+            
+        }
+
+        &--btn {
+
+            &--up {
+                justify-self: end;
+            }
+
+            &--in {
+                
+            }
+        }
+    }
+
+    &__title {
+        align-self: center;
+
+        &--h1 {
+            font-size: 6rem;
+            align-self: center;
+        }
+
+        &--h3 {
+
+        }
+
+        &--btn {
+
+        }
+    }
+
+    &__tiles {
+        
+    }
+}
