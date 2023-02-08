@@ -12,11 +12,10 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  background-color: #e56131; }
+  background-color: #f0cdc1; }
 
 .header {
-  background-image: url(../img/ben-duchac-3fJOXw1RbPo-unsplash.png);
-  backdrop-filter: blur(4rem);
+  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../img/ben-duchac-3fJOXw1RbPo-unsplash.png);
   height: 85vh;
   background-size: cover;
   background-position: top;
@@ -62,32 +61,53 @@ body {
       border-radius: 10rem; }
   .header__title {
     align-self: center;
+    max-width: 45rem;
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, max-content);
     justify-items: center;
     align-items: center;
     grid-row-gap: 4rem; }
     .header__title--h1 {
-      font-size: 8rem;
-      align-self: center; }
+      font-size: 7.5rem;
+      text-align: center; }
     .header__title--h3 {
-      align-self: center; }
+      font-size: 1.6rem;
+      font-weight: 300;
+      text-align: center; }
     .header__title--btn {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       transition: all .2s;
-      padding: 1.5rem 5rem;
-      background-color: #e56131;
+      padding: 1.5rem 6rem;
+      background-color: #dc693f;
       border-radius: 10rem;
       text-decoration: none;
       color: #FFF; }
   .header__tiles {
-    transform: translateY(5rem);
+    transform: translateY(15rem);
+    margin: 0rem 5rem;
     color: #000;
-    display: grid;
-    grid-auto-flow: column; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
     .header__tiles--1, .header__tiles--2, .header__tiles--3, .header__tiles--4 {
+      height: 25rem;
+      width: 30rem;
       background-color: #faf5ef;
       border-radius: 1.5rem;
       margin: 0 1rem;
-      align-self: center;
-      justify-self: center; }
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 2rem; }
+      .header__tiles--1 img, .header__tiles--2 img, .header__tiles--3 img, .header__tiles--4 img {
+        height: 40%;
+        width: 30%; }
+      .header__tiles--1 h2, .header__tiles--2 h2, .header__tiles--3 h2, .header__tiles--4 h2 {
+        font-size: 1.8rem; }
+      .header__tiles--1 p, .header__tiles--2 p, .header__tiles--3 p, .header__tiles--4 p {
+        font-size: 1.5rem;
+        margin: 0 2rem;
+        text-align: center; }
