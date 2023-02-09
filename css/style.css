@@ -7,16 +7,17 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  background-color: #e8d0c8; }
+  background-color: #e7d9d4; }
 
 .header {
   background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../img/ben-duchac-3fJOXw1RbPo-unsplash.png);
-  height: 85vh;
+  height: 90vh;
   background-size: cover;
   background-position: top;
   border-radius: 0 0 15rem 15rem;
@@ -40,13 +41,16 @@ body {
       .header__nav--text:hover, .header__nav--text:active {
         color: #FFF;
         font-size: 1.6rem; }
+      .header__nav--text:active {
+        transform: translateY(0.3rem); }
     .header__nav--btn-up, .header__nav--btn-in {
       text-decoration: none;
       color: #FFF; }
     .header__nav--btn-up, .header__nav--btn-in {
       padding: 1rem 2.5rem;
-      font-weight: 400;
-      transition: all .2s; }
+      font-weight: 400; }
+      .header__nav--btn-up:hover, .header__nav--btn-up:active, .header__nav--btn-in:hover, .header__nav--btn-in:active {
+        transition: all .2s; }
       .header__nav--btn-up:hover, .header__nav--btn-in:hover {
         transform: translateY(-0.5rem); }
       .header__nav--btn-up:active, .header__nav--btn-in:active {
@@ -74,12 +78,17 @@ body {
       font-weight: 300; }
     .header__title--btn {
       font-size: 1.5rem;
-      transition: all .2s;
       padding: 1.5rem 6rem;
       background-color: #dc693f;
       border-radius: 10rem;
       text-decoration: none;
       color: #FFF; }
+      .header__title--btn:hover, .header__title--btn:active {
+        transition: all .2s; }
+      .header__title--btn:hover {
+        transform: translateY(-0.5rem); }
+      .header__title--btn:active {
+        transform: translateY(0.5rem); }
 
 .tiles {
   transform: translateY(-8rem);
@@ -194,7 +203,7 @@ body {
       .activity__tiles__tile p, .activity__tiles__tile--btn {
         grid-column: 1 / 3; }
       .activity__tiles__tile h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         align-self: end; }
       .activity__tiles__tile p {
         font-size: 1.5rem; }
@@ -205,4 +214,26 @@ body {
         background-color: #e5e1e1;
         border: none;
         border-radius: 5rem;
-        padding: 1.3rem 3rem; }
+        padding: 1.3rem 3rem;
+        cursor: pointer; }
+        .activity__tiles__tile--btn:hover, .activity__tiles__tile--btn:active {
+          transition: all .2s; }
+        .activity__tiles__tile--btn:hover {
+          transform: translateY(-0.5rem); }
+        .activity__tiles__tile--btn:active {
+          transform: translateY(0.5rem); }
+  .activity__btn {
+    font-size: 1.5rem;
+    padding: 1.5rem 8rem;
+    border: 1px solid #dc693f;
+    background-color: transparent;
+    border-radius: 10rem;
+    text-decoration: none;
+    color: #dc693f;
+    cursor: pointer; }
+    .activity__btn:hover, .activity__btn:active {
+      transition: all .2s; }
+    .activity__btn:hover {
+      transform: translateY(-0.5rem); }
+    .activity__btn:active {
+      transform: translateY(0.5rem); }
