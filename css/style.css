@@ -60,6 +60,7 @@ body {
     align-self: center;
     justify-self: center;
     max-width: 45rem;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, max-content);
@@ -67,12 +68,10 @@ body {
     align-items: center;
     grid-row-gap: 4rem; }
     .header__title--h1 {
-      font-size: 7.5rem;
-      text-align: center; }
+      font-size: 7.5rem; }
     .header__title--h4 {
       font-size: 1.6rem;
-      font-weight: 300;
-      text-align: center; }
+      font-weight: 300; }
     .header__title--btn {
       font-size: 1.5rem;
       transition: all .2s;
@@ -94,8 +93,9 @@ body {
     height: 25rem;
     width: 30rem;
     background-color: #faf5ef;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     padding: 1rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,14 +108,61 @@ body {
       font-size: 1.8rem; }
     .tiles--1 p, .tiles--2 p, .tiles--3 p, .tiles--4 p {
       font-size: 1.5rem;
-      margin: 0 2rem;
-      text-align: center; }
+      margin: 0 2rem; }
 
-.activities__tile {
-  background-color: #FFF;
-  border-radius: 2rem;
-  padding: 3rem; }
-  .activities__tile__landcape {
-    border-radius: 50%; }
-  .activities__tile__price {
-    font-size: 3rem; }
+.activity {
+  margin: 10rem 10rem;
+  color: #000;
+  gap: 5rem 4rem; }
+  .activity__icon {
+    height: 8rem;
+    width: 8rem; }
+  .activity__tiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 2rem; }
+    .activity__tiles__tile {
+      height: 40rem;
+      width: 30rem;
+      background-color: #faf5ef;
+      border-radius: 2rem;
+      display: grid;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 3.5rem; }
+      .activity__tiles__tile--landscape {
+        width: 90%;
+        border-radius: 2rem;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        z-index: 1;
+        justify-self: center;
+        align-self: center; }
+      .activity__tiles__tile--heart {
+        height: 3rem;
+        width: 3rem;
+        fill: white;
+        background-color: orangered;
+        border-radius: 1rem;
+        padding: .5rem;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self: end;
+        margin: 3rem;
+        z-index: 2; }
+      .activity__tiles__tile--price {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        justify-self: center;
+        align-self: end;
+        z-index: 3;
+        width: 40%;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 1.25rem;
+        transform: translateY(50%); }
+      .activity__tiles__tile p {
+        font-size: 1.5rem; }
