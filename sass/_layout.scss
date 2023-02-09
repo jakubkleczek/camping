@@ -26,6 +26,7 @@
         &--icon {
             height: 4rem;
             width: 4rem;
+            border-radius: 100rem;
         }
 
         &--text {
@@ -144,7 +145,6 @@
 .tiles {
     transform: translateY(-8rem);
     margin: 0rem 5rem;
-    color: #000;
 
     display: flex;
     flex-wrap: wrap;
@@ -198,8 +198,6 @@
     gap: 2rem 4rem;
     margin: 10rem 10rem;
     
-    color: #000;
-
     // display: flex;
     // flex-direction: column;
     // flex-wrap: wrap;
