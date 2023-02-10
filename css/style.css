@@ -9,6 +9,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -237,3 +240,94 @@ body {
       transform: translateY(-0.5rem); }
     .activity__btn:active {
       transform: translateY(0.5rem); }
+
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #edd1c5;
+  border-radius: 2rem;
+  padding: 2rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  @media only screen and (max-width: 65.625em) {
+    .contact {
+      grid-template-columns: 1fr;
+      grid-row-gap: 3rem;
+      justify-items: center; } }
+  .contact h2 {
+    font-size: 4rem;
+    align-self: end; }
+  .contact p {
+    font-size: 1.8rem;
+    font-weight: 400; }
+  .contact__email {
+    width: 90%;
+    background-color: #faf5ef;
+    border-radius: 2rem;
+    padding: 1rem;
+    align-self: start;
+    display: flex;
+    align-items: center; }
+    .contact__email--icon {
+      height: 4rem;
+      width: 4rem;
+      fill: #777;
+      margin: 0 1rem; }
+    .contact__email input {
+      width: 100%;
+      background-color: #faf5ef;
+      border: none;
+      height: 3rem;
+      font-size: 1.5rem;
+      color: #333; }
+    .contact__email img {
+      height: 4rem;
+      width: 4rem;
+      cursor: pointer;
+      order: 5; }
+      .contact__email img:hover, .contact__email img:active {
+        transition: all .2s; }
+      .contact__email img:hover {
+        transform: translateY(-0.3rem); }
+      .contact__email img:active {
+        transform: translateY(0.3rem); }
+  .contact img {
+    align-self: center;
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1; }
+    @media only screen and (max-width: 65.625em) {
+      .contact img {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1; } }
+
+.footer {
+  background-color: #e2c7c9;
+  border-radius: 15rem 15rem 0 0;
+  padding: 7rem 3rem 10rem 10rem;
+  margin-top: 15rem;
+  line-height: 2rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  grid-row-gap: 3rem; }
+  .footer * > li {
+    list-style: none;
+    font-size: 1.3rem; }
+  .footer * > h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem; }
+  .footer * > p {
+    font-size: 1.3rem; }
+  .footer__hip {
+    margin-right: 10rem; }
+  .footer__app img {
+    height: 3rem; }
+  .footer__rights {
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 1.3rem; }
