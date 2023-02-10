@@ -35,6 +35,9 @@ body {
     grid-template-columns: repeat(9, max-content) minmax(max-content, 1fr) max-content;
     align-items: center;
     grid-column-gap: 3rem; }
+    @media only screen and (max-width: 50em) {
+      .header__nav {
+        display: none; } }
     .header__nav--icon {
       height: 4rem;
       width: 4rem;
@@ -76,6 +79,9 @@ body {
     justify-items: center;
     align-items: center;
     grid-row-gap: 4rem; }
+    @media only screen and (max-width: 65.625em) {
+      .header__title {
+        grid-row: 2 / 3; } }
     .header__title--h1 {
       font-size: 7.5rem; }
     .header__title--h4 {
@@ -257,7 +263,8 @@ body {
     .contact {
       grid-template-columns: 1fr;
       grid-row-gap: 3rem;
-      justify-items: center; } }
+      justify-items: center;
+      text-align: center; } }
   .contact h2 {
     font-size: 4rem;
     align-self: end; }
@@ -295,26 +302,31 @@ body {
         transform: translateY(-0.3rem); }
       .contact__email img:active {
         transform: translateY(0.3rem); }
-  .contact img {
+  .contact__tent {
     align-self: center;
     justify-self: center;
     grid-column: 2 / 3;
     grid-row: 1 / -1; }
     @media only screen and (max-width: 65.625em) {
-      .contact img {
+      .contact__tent {
         grid-column: 1 / 2;
-        grid-row: 1 / -1; } }
+        grid-row: 1 / -1;
+        width: 80%; } }
 
 .footer {
   background-color: #e2c7c9;
   border-radius: 15rem 15rem 0 0;
-  padding: 7rem 3rem 10rem 10rem;
+  padding: 7rem 10rem 5rem 10rem;
   margin-top: 15rem;
   line-height: 2rem;
   display: grid;
   grid-template-columns: 3fr repeat(3, 1fr);
   grid-template-rows: repeat(3, max-content);
   grid-row-gap: 3rem; }
+  @media only screen and (max-width: 40.625em) {
+    .footer {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto; } }
   .footer * > li {
     list-style: none;
     font-size: 1.3rem; }
@@ -325,8 +337,16 @@ body {
     font-size: 1.3rem; }
   .footer__hip {
     margin-right: 10rem; }
-  .footer__app img {
-    height: 3rem; }
+    @media only screen and (max-width: 65.625em) {
+      .footer__hip {
+        margin-right: 5rem; } }
+    @media only screen and (max-width: 40.625em) {
+      .footer__hip {
+        grid-column: 1 / 3; } }
+  .footer__app {
+    grid-column: 1 / -1; }
+    .footer__app img {
+      height: 3rem; }
   .footer__rights {
     grid-column: 1 / -1;
     justify-self: center;
